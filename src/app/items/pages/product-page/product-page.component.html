@@ -1,1 +1,30 @@
-<p>product-page works!</p>
+<h1>Add Product</h1>
+
+<hr />
+
+<form [formGroup]="form" class="flex items-center gap-8 mb-3 row">
+  <div class="row g-3 align-items-center mb-3">
+    <div class="col-auto">
+      <label for="">Nombre</label>
+    </div>
+
+    <div class="col-auto">
+      <input type="text" class="form-control" formControlName="name" />
+    </div>
+
+    <div class="col-auto">
+      <span customLabel [color]="color" [errors]="form.get('name')?.errors" >Algo de informacion</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary" (click)="changeColor()">Cambiar Color</button>
+    </div>
+  </div>
+</form>
+
+<pre>{{ form.get("name")?.errors | json }}</pre>
+<pre>{{ form.controls.name.errors }}</pre>
+
+<p>Color: {{color}}</p>
