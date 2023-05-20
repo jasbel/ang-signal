@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./items/items.module').then((m) => m.ItemsModule),
   },
+  {
+    path: 'signals',
+    loadChildren: () =>
+      import('./signal/signal.module').then((m) => m.SignalModule),
+  },
 ];
 
 @NgModule({
