@@ -4,11 +4,12 @@ import { SignalLayoutComponent } from './layout/signal-layout/signal-layout.comp
 import { CounterPageComponent } from './pages/counter-page/counter-page.component';
 import { UserInfoPageComponent } from './pages/user-info-page/user-info-page.component';
 import { PropertyPageComponent } from './pages/property-page/property-page.component';
+import { SignalComponent } from './signal.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SignalLayoutComponent,
+    component: SignalComponent,
     children: [
       { path: 'counter', component: CounterPageComponent },
       { path: 'user-info', component: UserInfoPageComponent },

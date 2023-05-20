@@ -7,9 +7,17 @@ import { CounterPageComponent } from './pages/counter-page/counter-page.componen
 import { UserInfoPageComponent } from './pages/user-info-page/user-info-page.component';
 import { PropertyPageComponent } from './pages/property-page/property-page.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { SignalComponent } from './signal.component';
 
 @NgModule({
-  declarations: [ SignalLayoutComponent, CounterPageComponent, UserInfoPageComponent, PropertyPageComponent, SideMenuComponent],
+  declarations: [
+    SignalLayoutComponent,
+    CounterPageComponent,
+    UserInfoPageComponent,
+    PropertyPageComponent,
+    SideMenuComponent,
+    SignalComponent,
+  ],
   imports: [CommonModule, SignalRoutingModule],
 })
 export class SignalModule {}
